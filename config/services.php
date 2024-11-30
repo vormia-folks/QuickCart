@@ -34,5 +34,11 @@ return [
             'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
     ],
-
+    'cart_actions' => [
+        'remove' => 'Itema was removed',
+        'quantity_up' => 'Item quantity was added',
+        'quantity_down' => 'Item quantity was reduced',
+        'delete' => 'User Cleared the cart',
+        // 'abandoned' => 'User Abandoned the cart',
+    ]
 ];
