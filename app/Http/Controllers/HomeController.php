@@ -69,7 +69,7 @@ class HomeController extends Controller
 
         // Get Shopper Id
         // Todo: sort shopper ID issue so it wont be unique on every session
-        $shoppingId = 5; //\App\Models\Shopping::get_shopper_id(session('shopper'));
+        $shoppingId = \App\Models\Shopping::get_shopper_id(session('shopper'));
 
         // This Product
         $this_product = Product::where('id', (int) $request->get('p'))->first();
